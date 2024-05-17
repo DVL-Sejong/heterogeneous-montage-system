@@ -1,0 +1,114 @@
+{
+  "info": {
+    "org_id": 404,
+    "org_img_name": "404",
+    "org_path": "/Images/montage/404.png",
+    "org_img_size": 145,
+    "org_img_pix": "540x720",
+    "age": 42,
+    "gender": "M",
+    "level": 1
+  },
+  "description": {
+    "org_id": 404,
+    "face": {
+      "type": "원형",
+      "size": "작은",
+      "foreheadType": "넓은",
+      "foreheadSize": "작은",
+      "chinType": "둥근형",
+      "chinSize": "작은",
+      "cheek": "보통",
+      "description": "작은 원형 얼굴에 작은 이마와 둥근 작은 턱이 특징입니다. 볼은 보통입니다."
+    },
+    "hairstyle": {
+      "type": "곱슬머리",
+      "topLength": "짧음",
+      "sizeLength": "분류없음",
+      "part": "가운데 가르마",
+      "description": "짧은 곱슬머리로, 가운데 가르마 스타일을 선호합니다. 활동적인 이미지에 어울리는 헤어스타일입니다."
+    },
+    "eyebrows": {
+      "type": "직선형",
+      "deep": "분류없음",
+      "length": "보통",
+      "thick": "두껍다",
+      "glabella": "보통",
+      "description": "직선형의 두꺼운 눈썹으로, 명확한 인상을 줍니다."
+    },
+    "eyes": {
+      "size": "작다",
+      "type": "단커풀",
+      "distance": "보통",
+      "slant": "보통",
+      "shape": "분류없음",
+      "eyelids": "보통",
+      "bottom": "없다",
+      "description": "작은 크기의 단커풀 눈으로, 표정이 매우 다양하고 풍부합니다."
+    },
+    "nose": {
+      "size": "보통",
+      "length": "짧다",
+      "height": "낮다",
+      "top": "둥근형",
+      "nostrils": "보통",
+      "philtrum": "짧다",
+      "description": "보통 크기의 코로, 코의 길이는 짧고 높이는 낮은 편입니다."
+    },
+    "mouth": {
+      "type": "보통형",
+      "size": "보통",
+      "shape": "ㅡ모양",
+      "thick": "보통",
+      "ratio": "위아래가 같다",
+      "side": "보통",
+      "line": "분명함",
+      "description": "두꺼운 입술을 가지고 있습니다."
+    },
+    "neck": {
+      "description": "목은 평범한 길이와 두께를 가지고 있으며, 특별한 특징은 없습니다."
+    },
+    "wrinkle": {
+      "forehead": "없다",
+      "glabella": "없다",
+      "eyes": "없다",
+      "mouth": "없다",
+      "cheek": "없다",
+      "lib": "없다",
+      "neck": "없다",
+      "description": "주름은 눈에 띄지 않으며, 상대적으로 매끄러운 피부를 유지하고 있습니다."
+    },
+    "feature": {
+      "mustache": "없음",
+      "sideburns": "없음",
+      "dimple": "없음",
+      "scar": "없음",
+      "mole": "없음",
+      "frekles": "없음",
+      "spots": "없음",
+      "tatoo": "없음",
+      "makeup": "없음",
+      "description": "콧수염을 가지고 있으며, 큰 발을 가지고 있습니다."
+    },
+    "impression": {
+      "type": "밝고 유쾌함",
+      "description": "밝은 표정과 두꺼운 입술, 작은 얼굴, 작은 키로 유쾌하고 친근한 인상을 주며, 허스키한 목소리를 가지고 있습니다."
+    }
+  },
+  "sketch_info": {
+    "org_id": 404,
+    "sketch_id": 4055,
+    "img_name": "404_4055",
+    "img_path": "/Images/sketch/H/404_4055.jpg",
+    "img_size": 135,
+    "img_pix": "540x720"
+  },
+  "org_sketch_info": {
+    "org_id": 404,
+    "org_sketch_id": 33040,
+    "img_name": "404",
+    "img_path": "/Images/org_sketch/404.png",
+    "img_size": 175,
+    "img_pix": "540x720"
+  }
+}

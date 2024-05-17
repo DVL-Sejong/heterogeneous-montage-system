@@ -1,0 +1,114 @@
+{
+  "info": {
+    "org_id": 505,
+    "org_img_name": "505",
+    "org_path": "/Images/montage/505.png",
+    "org_img_size": 160,
+    "org_img_pix": "540x720",
+    "age": 34,
+    "gender": "M",
+    "level": 1
+  },
+  "description": {
+    "org_id": 505,
+    "face": {
+      "type": "장방형",
+      "size": "보통",
+      "foreheadType": "넓은",
+      "foreheadSize": "보통",
+      "chinType": "뾰족형",
+      "chinSize": "길다",
+      "cheek": "적음",
+      "description": "작은 얼굴과 길고 뾰족한 턱이 특징입니다. 볼은 적은 편입니다."
+    },
+    "hairstyle": {
+      "type": "직모(생머리)",
+      "topLength": "짧음",
+      "sizeLength": "분류없음",
+      "part": "가운데 가르마",
+      "description": "짧은 생머리 스타일로, 가운데 가르마를 유지합니다. 전반적으로 깔끔하고 정돈된 헤어스타일을 선호합니다."
+    },
+    "eyebrows": {
+      "type": "직선형",
+      "deep": "분류없음",
+      "length": "보통",
+      "thick": "두껍다",
+      "glabella": "보통",
+      "description": "직선형의 두꺼운 눈썹으로, 뚜렷한 인상을 줍니다."
+    },
+    "eyes": {
+      "size": "보통",
+      "type": "쌍커풀",
+      "distance": "보통",
+      "slant": "보통",
+      "shape": "분류없음",
+      "eyelids": "보통",
+      "bottom": "없다",
+      "description": "보통 크기의 쌍커풀 눈으로, 표정에 따라 다양한 매력을 발산합니다."
+    },
+    "nose": {
+      "size": "보통",
+      "length": "보통",
+      "height": "보통",
+      "top": "둥근형",
+      "nostrils": "보통",
+      "philtrum": "보통",
+      "description": "보통 크기의 코로, 조화로운 비율을 가지고 있으며, 분필코를 가지고 있습니다."
+    },
+    "mouth": {
+      "type": "보통형",
+      "size": "보통",
+      "shape": "ㅡ모양",
+      "thick": "보통",
+      "ratio": "위아래가 같다",
+      "side": "보통",
+      "line": "분명함",
+      "description": "보통 크기의 입술로, 자연스러운 미소를 자주 보여줍니다."
+    },
+    "neck": {
+      "description": "목은 평범한 길이와 두께를 가지고 있으며, 특별한 특징은 없습니다."
+    },
+    "wrinkle": {
+      "forehead": "없다",
+      "glabella": "없다",
+      "eyes": "없다",
+      "mouth": "없다",
+      "cheek": "없다",
+      "lib": "없다",
+      "neck": "없다",
+      "description": "주름은 눈에 띄지 않으며, 매끄러운 피부를 유지합니다."
+    },
+    "feature": {
+      "mustache": "없음",
+      "sideburns": "없음",
+      "dimple": "없음",
+      "scar": "없음",
+      "mole": "없음",
+      "frekles": "없음",
+      "spots": "없음",
+      "tatoo": "없음",
+      "makeup": "없음",
+      "description": "얼굴에 특별한 특징이 없으며, 깨끗한 외모를 가지고 있습니다."
+    },
+    "impression": {
+      "type": "밝고 활기참",
+      "description": "깡마른 체형을 가지고 있으며, 높은 직선형의 코와 작은 크기의 얼굴 특징은 활기차고 긍정적인 인상을 주며, 친근하고 접근하기 쉬운 이미지를 강조합니다."
+    }
+  },
+  "sketch_info": {
+    "org_id": 505,
+    "sketch_id": 5055,
+    "img_name": "505_5055",
+    "img_path": "/Images/sketch/H/505_5055.jpg",
+    "img_size": 150,
+    "img_pix": "540x720"
+  },
+  "org_sketch_info": {
+    "org_id": 505,
+    "org_sketch_id": 34050,
+    "img_name": "505",
+    "img_path": "/Images/org_sketch/505.png",
+    "img_size": 180,
+    "img_pix": "540x720"
+  }
+}

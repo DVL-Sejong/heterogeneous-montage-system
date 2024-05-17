@@ -1,0 +1,114 @@
+{
+  "info": {
+    "org_id": 303,
+    "org_img_name": "303",
+    "org_path": "/Images/montage/303.png",
+    "org_img_size": 170,
+    "org_img_pix": "540x720",
+    "age": 52,
+    "gender": "M",
+    "level": 1
+  },
+  "description": {
+    "org_id": 303,
+    "face": {
+      "type": "원형",
+      "size": "큰",
+      "foreheadType": "넓은",
+      "foreheadSize": "큰",
+      "chinType": "둥근형",
+      "chinSize": "큰",
+      "cheek": "많음",
+      "description": "큰 원형 얼굴에 넓고 큰 이마, 그리고 둥근 큰 턱이 특징입니다. 볼은 풍부한 편입니다."
+    },
+    "hairstyle": {
+      "type": "직모(생머리)",
+      "topLength": "중간",
+      "sizeLength": "분류없음",
+      "part": "가운데 가르마",
+      "description": "중간 길이의 생머리로, 가운데 가르마를 유지하고 있습니다. 전반적으로 깔끔하고 단정한 스타일을 선호합니다."
+    },
+    "eyebrows": {
+      "type": "곡선형",
+      "deep": "분류없음",
+      "length": "보통",
+      "thick": "보통",
+      "glabella": "보통",
+      "description": "보통 두께의 곡선형 눈썹으로, 자연스러운 인상을 줍니다."
+    },
+    "eyes": {
+      "size": "큰",
+      "type": "쌍커풀",
+      "distance": "보통",
+      "slant": "보통",
+      "shape": "분류없음",
+      "eyelids": "보통",
+      "bottom": "없다",
+      "description": "큰 쌍커풀 눈으로, 눈과 눈 사이의 거리는 보통입니다. 눈동자는 크고 밝아 친근한 인상을 줍니다."
+    },
+    "nose": {
+      "size": "큰",
+      "length": "보통",
+      "height": "보통",
+      "top": "둥근형",
+      "nostrils": "보통",
+      "philtrum": "보통",
+      "description": "보통 크기의 코로, 둥근형 콧등이 특징이며, 전체적으로 조화로운 비율을 가집니다."
+    },
+    "mouth": {
+      "type": "보통형",
+      "size": "큰",
+      "shape": "직선형",
+      "thick": "보통",
+      "ratio": "위아래가 같다",
+      "side": "보통",
+      "line": "분명함",
+      "description": "큰 크기의 입으로, 직선형 모양의 입술을 가지고 있습니다. 덧니가 있으며, 친근하고 밝은 미소를 자주 보여줍니다."
+    },
+    "neck": {
+      "description": "목은 평범한 길이와 두께를 가지고 있으며, 특별한 특징은 없습니다."
+    },
+    "wrinkle": {
+      "forehead": "없다",
+      "glabella": "없다",
+      "eyes": "없다",
+      "mouth": "없다",
+      "cheek": "없다",
+      "lib": "없다",
+      "neck": "없다",
+      "description": "주름은 눈에 띄지 않으며, 상대적으로 매끄러운 피부를 유지하고 있습니다."
+    },
+    "feature": {
+      "mustache": "없음",
+      "sideburns": "없음",
+      "dimple": "없음",
+      "scar": "없음",
+      "mole": "없음",
+      "frekles": "없음",
+      "spots": "없음",
+      "tatoo": "없음",
+      "makeup": "없음",
+      "description": "건장한 체형에 덧니를 가지고 있습니다."
+    },
+    "impression": {
+      "type": "친근하고 유쾌함",
+      "description": "큰 눈과 밝은 미소는 친근하고 유쾌한 인상을 주며, 억울한 표정과 말투를 즐겨 사용합니다."
+    }
+  },
+  "sketch_info": {
+    "org_id": 303,
+    "sketch_id": 3055,
+    "img_name": "303_3055",
+    "img_path": "/Images/sketch/H/303_3055.jpg",
+    "img_size": 155,
+    "img_pix": "540x720"
+  },
+  "org_sketch_info": {
+    "org_id": 303,
+    "org_sketch_id": 32030,
+    "img_name": "303",
+    "img_path": "/Images/org_sketch/303.png",
+    "img_size": 190,
+    "img_pix": "540x720"
+  }
+}

@@ -1,0 +1,72 @@
+{
+	"0": {
+		"channel": 0,
+		"cctvStrtSecnNm": "예상 이동 범위",
+		"x": 129.065341,
+		"y": 35.098297,
+		"direction": 0
+	},
+	"1": {
+		"channel": 1,
+		"cctvStrtSecnNm": "부산대학교",
+		"x": 129.083721,
+		"y": 35.240132,
+		"direction": 1
+	},
+	"2": {
+		"channel": 2,
+		"cctvStrtSecnNm": "부산 수영동 김밥천국",
+		"x": 129.113650,
+		"y": 35.159394,
+		"direction": 2
+	},
+	"3": {
+		"channel": 3,
+		"cctvStrtSecnNm": "남천동 뚜레주르",
+		"x": 129.110051,
+		"y": 35.149501,
+		"direction": 3
+	},
+	"4": {
+		"channel": 4,
+		"cctvStrtSecnNm": "부산역",
+		"x": 129.039381,
+		"y": 35.114601,
+		"direction": 4
+	},
+	"5": {
+		"channel": 5,
+		"cctvStrtSecnNm": "흰여울문화마을",
+		"x": 129.045341,
+		"y": 35.078297,
+		"direction": 5
+	},
+	"10": {
+		"channel": 10,
+		"cctvStrtSecnNm": "후보1",
+		"x": 129.065341,
+		"y": 35.088297,
+		"direction": 10
+	},
+	"11": {
+		"channel": 11,
+		"cctvStrtSecnNm": "후보2",
+		"x": 129.075341,
+		"y": 35.108297,
+		"direction": 11
+	},
+	"12": {
+		"channel": 12,
+		"cctvStrtSecnNm": "후보3",
+		"x": 129.098386,
+		"y": 35.122070,
+		"direction": 12
+	},
+	"13": {
+		"channel": 13,
+		"cctvStrtSecnNm": "후보4",
+		"x": 129.095341,
+		"y": 35.108297,
+		"direction": 13
+	}
+}

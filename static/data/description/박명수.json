@@ -1,0 +1,114 @@
+{
+  "info": {
+    "org_id": 202,
+    "org_img_name": "202",
+    "org_path": "/Images/montage/202.png",
+    "org_img_size": 160,
+    "org_img_pix": "540x720",
+    "age": 51,
+    "gender": "M",
+    "level": 1
+  },
+  "description": {
+    "org_id": 202,
+    "face": {
+      "type": "사각형",
+      "size": "크다",
+      "foreheadType": "넓은",
+      "foreheadSize": "보통",
+      "chinType": "각진형",
+      "chinSize": "보통",
+      "cheek": "적음",
+      "description": "몸에 비해 큰 사각형 얼굴에 넓은 이마와 각진 턱이 특징입니다. 볼은 적은 편입니다."
+    },
+    "hairstyle": {
+      "type": "곱슬머리",
+      "topLength": "중간",
+      "sizeLength": "분류없음",
+      "part": "가운데 가르마",
+      "description": "적은 머리숱의 중간 길이의 곱슬머리로, 가운데 가르마 스타일을 선호합니다."
+    },
+    "eyebrows": {
+      "type": "곡선형",
+      "deep": "분류없음",
+      "length": "보통",
+      "thick": "두껍다",
+      "glabella": "보통",
+      "description": "곡선형의 두꺼운 눈썹으로, 뚜렷한 인상을 줍니다."
+    },
+    "eyes": {
+      "size": "작다",
+      "type": "단커풀",
+      "distance": "보통",
+      "slant": "보통",
+      "shape": "분류없음",
+      "eyelids": "보통",
+      "bottom": "없다",
+      "description": "작은 크기의 단커풀 눈으로, 특별한 기울기 없이 보통입니다."
+    },
+    "nose": {
+      "size": "보통",
+      "length": "보통",
+      "height": "보통",
+      "top": "둥근형",
+      "nostrils": "보통",
+      "philtrum": "보통",
+      "description": "보통 크기의 코로, 둥근 콧등이 특징입니다."
+    },
+    "mouth": {
+      "type": "보통형",
+      "size": "보통",
+      "shape": "직선형",
+      "thick": "보통",
+      "ratio": "위아래가 같다",
+      "side": "보통",
+      "line": "분명함",
+      "description": "보통 크기의 입으로, 입술 모양은 직선형입니다."
+    },
+    "neck": {
+      "description": "목은 평범한 길이와 두께를 가지고 있으며, 특별한 특징은 없습니다."
+    },
+    "wrinkle": {
+      "forehead": "없다",
+      "glabella": "없다",
+      "eyes": "없다",
+      "mouth": "없다",
+      "cheek": "없다",
+      "lib": "없다",
+      "neck": "없다",
+      "description": "눈 아래 주름이 있으며, 상대적으로 매끄러운 피부를 유지하고 있습니다."
+    },
+    "feature": {
+      "mustache": "없음",
+      "sideburns": "없음",
+      "dimple": "없음",
+      "scar": "없음",
+      "mole": "없음",
+      "frekles": "없음",
+      "spots": "없음",
+      "tatoo": "없음",
+      "makeup": "없음",
+      "description": "상체에 비해 부실한 하체를 가지고 있습니다."
+    },
+    "impression": {
+      "type": "강렬하고 카리스마적임",
+      "description": "강렬한 눈썹과 사각형 얼굴로 인해 카리스마적인 인상을 줍니다. 적은 머리숱과 곱슬머리가 특징입니다."
+    }
+  },
+  "sketch_info": {
+    "org_id": 202,
+    "sketch_id": 2050,
+    "img_name": "202_2050",
+    "img_path": "/Images/sketch/H/202_2050.jpg",
+    "img_size": 145,
+    "img_pix": "540x720"
+  },
+  "org_sketch_info": {
+    "org_id": 202,
+    "org_sketch_id": 31020,
+    "img_name": "202",
+    "img_path": "/Images/org_sketch/202.png",
+    "img_size": 185,
+    "img_pix": "540x720"
+  }
+}

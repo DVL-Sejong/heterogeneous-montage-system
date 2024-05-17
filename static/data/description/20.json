@@ -1,0 +1,114 @@
+{
+  "info": {
+    "org_id": 20,
+    "org_img_name": "20",
+    "org_path": "/Images/montage/20.png",
+    "org_img_size": 139,
+    "org_img_pix": "540x720",
+    "age": 20,
+    "gender": "M",
+    "level": 3
+  },
+  "description": {
+    "org_id": 20,
+    "face": {
+      "type": "둥근형",
+      "size": "보통",
+      "foreheadType": "일자형",
+      "foreheadSize": "보통",
+      "chinType": "둥근형",
+      "chinSize": "길다",
+      "cheek": "적음",
+      "description": "둥근 얼굴형으로 왼쪽 머리카락이 눈썹 까지 대각선으로 내려와 이마가 완전히 보이지는 않지만 일자형으로 유추된다."
+    },
+    "hairstyle": {
+      "type": "직모(생머리)",
+      "topLength": "눈썹위",
+      "sizeLength": "분류없음",
+      "part": "오른쪽가르마",
+      "description": "약간 긴 컷트 머리형으로 전체 귀가 다 보이지는 않습니다. 옆 머리카락이 귀를 살짝 덮고 귀볼쪽으로 반정도만 보여줍니다. 오른쪽 가르마가 있으며 가르마를 기준으로 왼쪽은 대각선으로 이마를 덮습니다."
+    },
+    "eyebrows": {
+      "type": "직선형",
+      "deep": "분류없음",
+      "length": "짧다",
+      "thick": "보통",
+      "glabella": "보통",
+      "description": "왼쪽 눈썹 머리가 약간  뒤쪽에서 시작하며 오른쪽 눈썹이 중간 이후로는 살짝 올라갔다 내려가는 모양입니다. 눈썹은 보통으로 진합니다."
+    },
+    "eyes": {
+      "size": "보통",
+      "type": "쌍커풀",
+      "distance": "보통",
+      "slant": "보통",
+      "shape": "분류없음",
+      "eyelids": "보통",
+      "bottom": "없다",
+      "description": "쌍커플이 있는 보통크기 눈으로 쌍커플이 완전 진해 보이지는 않습니다. 눈모양은 아몬드형으로 눈꼬리가 길지는 않는것으로 관찰됩니다."
+    },
+    "nose": {
+      "size": "보통",
+      "length": "보통",
+      "height": "보통",
+      "top": "둥근형",
+      "nostrils": "보통",
+      "philtrum": "보통",
+      "description": "콧망울이 동그란 복코 스타일로 보여집니다. 콧날개는 크지 않습니다."
+    },
+    "mouth": {
+      "type": "보통형",
+      "size": "작다",
+      "shape": "ㅡ모양",
+      "thick": "얇다",
+      "ratio": "위아래가 같다",
+      "side": "보통",
+      "line": "흐림",
+      "description": "입술은 살짝 얇고 작은것으로 관찰됩니다. 입꼬리는 올라가지는 않았지만 굳게 잡고 있습니다."
+    },
+    "neck": {
+      "description": "목은 보통 두께로 성대가 거의 보이지 않습니다. 목에 가로로 희미한 선이 있는것으로 관찰됩니다."
+    },
+    "wrinkle": {
+      "forehead": "없다",
+      "glabella": "없다",
+      "eyes": "없다",
+      "mouth": "없다",
+      "cheek": "없다",
+      "lib": "없다",
+      "neck": "없다",
+      "description": "전체적인 주름은 관찰 되지 않습니다."
+    },
+    "feature": {
+      "mustache": "해당사항없음",
+      "sideburns": "해당사항없음",
+      "dimple": "해당사항없음",
+      "scar": "해당사항없음",
+      "mole": "해당사항없음",
+      "frekles": "해당사항없음",
+      "spots": "해당사항없음",
+      "tatoo": "해당사항없음",
+      "makeup": "해당사항없음",
+      "description": "얼굴에 흉터.점. 주근깨.보조개등의 특징은 없습니다."
+    },
+    "impression": {
+      "type": "지적임",
+      "description": "동그란 얼굴에 풍성하고 살짝 긴 커트머리와 거의 나오지 않은 성대가 남성보다는 여성쪽의 분위기를 냅니다. 또렷한 눈과 입술이  인물의 섬세함을 더 증진시키고 지적이게 보이게 도와줍니다. "
+    }
+  },
+  "sketch_info": {
+    "org_id": 20,
+    "sketch_id": 1766,
+    "img_name": "20_1766",
+    "img_path": "/Images/sketch/H/20_1766.jpg",
+    "img_size": 133,
+    "img_pix": "540x720"
+  },
+  "org_sketch_info": {
+    "org_id": 20,
+    "org_sketch_id": 28964,
+    "img_name": "20",
+    "img_path": "/Images/org_sketch/20.png",
+    "img_size": 175,
+    "img_pix": "540x720"
+  }
+}

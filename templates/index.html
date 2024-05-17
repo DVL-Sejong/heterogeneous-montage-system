@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="static/img/logo-fav.png">
+    <title>Beagle</title>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="static/lib/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="static/lib/material-design-icons/css/material-design-iconic-font.min.css"/>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.css"/>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css"
+          type="text/css"/>
+    <link rel="stylesheet" href="static/lib/bootstrap-slider/css/bootstrap-slider.min.css"/>
+    <link rel="stylesheet" href="static/css/styles.css" type="text/css"/>
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/beagle.css" type="text/css"/>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css"/>
+</head>
+<body> <!--부모 position relative, 자식 position absolute-->
+
+<div class="be-wrapper" style="width:100%; height: 100%;">
+    <!--
+    <nav class="navbar navbar-expand fixed-top be-top-header">
+        <div class="container-fluid">
+            <div class="page-title">Montage</div>
+        </div>
+    </nav>-->
+    <nav class="sb-topnav sb-navbar sb-navbar-expand sb-navbar-dark fixed-top bg-dark" style="height: 5%;">
+        <!-- 메인페이지 (기술명 영문으로 입력) -->
+        <a class="sb-navbar-brand ps-3" href="#" style="font-size: 1rem; padding-bottom: 0.5rem; font-family: system-ui;">FUSION PLATFORM</a>
+        <!-- 메인페이지 (기술명 영문으로 입력) -->
+
+        <!-- 메뉴 (메뉴명 영문으로 입력) -->
+        <ul class="sb-navbar-nav ms-auto ms-md-0 me-3 me-lg-4" style="padding-left: 2rem;">
+            <li class="sb-nav-item">
+                <a class="sb-nav-link" href="#!" >WORKSPACE</a>
+            </li>
+            <li class="sb-nav-item">
+                <a class="sb-nav-link" href="#!">COOPERATION LIST</a>
+            </li>
+        </ul>
+        <!-- 메뉴 (메뉴명 영문으로 입력) -->
+
+        <!-- 검색기능 및 영역구분 -->
+        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+            <div class="input-group">
+                <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+            </div>
+        </form>
+        <!-- 검색기능 및 영역구분 -->
+        <head>
+
+            <!-- 설정, 활동로그, 로그아웃 -->
+            <ul class="sb-navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="sb-nav-item dropdown">
+                    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 아래 ID 값 -->
+                    <a class="sb-nav-link sb-dropdown-toggle" id="navbarDropdown" href="#" role="button" style="font-size: 1rem; padding-bottom: 0.5rem; font-family: system-ui;"
+                       data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i>세종대학교</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li>
+                            <hr class="dropdown-divider"/>
+                        </li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- 설정, 활동로그, 로그아웃 -->
+    </nav>
+    <div class="be-content-expand layoutSidenav_content"
+         style="width:100%; margin: 0; height: 91%; background-color: #D6E4F0;">
+        <div class="main-content container-fluid" style="width:100%; height: 100%; padding: 0%;">
+            <!-- CCTV info -->
+            <div class="row" style="width:100%; height: 22%; padding: 10px;">
+                <div class="col-lg-12" style="height: 100%;">
+                    <div class="card" style="height: 100%;">
+                        <div class="card-body" style="height: 100%;">
+                            <div id="moreDescription" style="width: 100%; height: 100%;">
+                                <div class="row" style="height: 100%; width: 100%;">
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%; height: 100%;"
+                                         id="faceInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="hairInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="eyebrowInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="eyeInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="noseInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="mouthInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="neckInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="wrinkleInfo"></div>
+                                    <div class="card-body header"
+                                         style="text-align: center; padding: 0px 10px 10px; width: 10%;height: 100%;"
+                                         id="featureInfo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="width:100%; height: 75%; padding:0px; padding-left: 15px;">
+                <div class="col-lg-7" style="width:100%; height: 100%; padding: 0;">
+                    <div class="row" style="width:100%; height: 30%;">
+                        <div class="col-lg-6" style="height: 100%;">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body" style="width: 100%; height: 100%; padding: 10px;">
+                                    <div id="wordCloud" style="height: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" style="height: 100%;">
+                            <div class="card" style="height: 100%;">
+                                <div id="montageVideo" class="card-body" style="height: 100%; padding: 10px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="width:100%; height: 69%; margin-top: 1%;">
+                        <div class="col-lg-8" style="height: 100%;">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body" id="similarityAnalysisView" style="height: 100%;">
+                                    <div class="row" style=" width:100%; height: 40%; margin-top: 3%">
+                                        <div class="col-lg-3" style="height: 100%;">
+                                            <div class="card-body" style="height: 100%; text-align: center;">
+                                                <div id="similarityMontage" style="height: 90%;"></div>
+                                                <div class="header" style="height: 10%; width: 100%;">몽타주</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9" style="height: 100%; width: 100%">
+                                            <div class="row" style=" width:100%; height: 50%;">
+                                                <div class="col-lg-4" style=" width:100%; height: 90%;">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img src="../static/data/montage/눈.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">눈</div>
+                                                </div>
+                                                <div class="col-lg-4" style=" width:100%; height: 90%;">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img src="../static/data/montage/눈썹.png" style="display: flex; justify-content: center; align-items: center; height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; ">눈썹</div>
+                                                </div>
+                                                <div class="col-lg-4" style="width:100%; height: 90%;">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                    <img src="../static/data/montage/입.png" style="height: 100%;"></img>
+                                                    </div>
+                                                    <div class="header" style="height: 10%; width: 100%;">입</div>
+                                                </div>
+                                            </div>
+                                            <div class="row" style=" width:100%; height: 50%;">
+                                                <div class="col-lg-4">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img src="../static/data/montage/이마.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">이마</div>
+                                                </div>
+                                                <div class="col-lg-4">
+
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img src="../static/data/montage/목.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">목</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img src="../static/data/montage/코.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">코</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr style="height: 1%; margin-top: 3%; margin-bottom: 5%;">
+                                    <div class="row" style="width: 100%; height: 40%;">
+                                        <div class="col-lg-3" style="height: 100%;">
+                                            <div class="card-body" style="height: 100%; text-align: center;">
+                                                <div id="similarityPerson" style="height: 90%;"></div>
+                                                <div class="header" id="personName" style="height: 10%;">Person 1</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9" style="height: 100%; width: 100%">
+                                            <div class="row" style=" width:100%; height: 50%;">
+                                                <div class="col-lg-4" style=" width:100%; height: 90%;">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img id="personEye" src="../static/data/real/유재석1/눈.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">눈</div>
+                                                </div>
+                                                <div class="col-lg-4" style=" width:100%; height: 90%;">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img id="personEyebrow" src="../static/data/real/유재석1/눈썹.png" style="display: flex; justify-content: center; align-items: center; width: 100%;"></img></div>
+                                                    <div class="header" style=" height: 100%;">눈썹</div>
+                                                </div>
+                                                <div class="col-lg-4" style="width:100%; height: 90%;">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                    <img id="personMouse" src="../static/data/real/유재석1/입.png" style="height: 100%;"></img>
+                                                    </div>
+                                                    <div class="header" style="height: 10%; width: 100%;">입</div>
+                                                </div>
+                                            </div>
+                                            <div class="row" style=" width:100%; height: 50%;">
+                                                <div class="col-lg-4">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img id="personHair" src="../static/data/real/유재석1/이마.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">이마</div>
+                                                </div>
+                                                <div class="col-lg-4">
+
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img id="personNeck" src="../static/data/real/유재석1/목.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">목</div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 50%;">
+                                                        <img id="personNose" src="../static/data/real/유재석1/코.png" style="height: 100%;"></img></div>
+                                                    <div class="header" style="height: 10%; width: 100%;">코</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4" style="height: 100%;">
+                            <div class="card" style="height: 100%; width: 100%;">
+                                <div class="card" style="width: 100%; height: 70%; margin-bottom: 0;">
+                                    <div class="card-body" style="width: 100%; height: 100%; padding-bottom: 0;">
+                                        <div class="header">후보 인물</div>
+                                        <div class="chartCard"
+                                             style="width: 100%; height: 90%; display: flex; align-items: center; justify-content: center;">
+                                            <div class="chartBox" id="chartBox" style="width: 100%; height:100%;">
+                                                <canvas id="candidateChart" style="width: 100%; height:100%;"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card" style="width: 100%; height: 28%; margin-bottom: 0;">
+                                    <div class="card-body"
+                                         style="width: 100%; height: 100%; margin-top: 0;padding-top: 0;">
+                                        <hr style="height: 1%;">
+                                        <div class="row" style="width: 100%; height: 90%;">
+                                            <div id="similarityPerson2"
+                                                 style="width: 30%; height: 85%; margin-left: 5%; margin-top: 5%"></div>
+                                            <div style="width: 60%;">
+                                                <div class="header"
+                                                     style=" width: 100%; height: 20%; margin-bottom: 5%">
+                                                    추정 인물 유사도
+                                                </div>
+                                                <div id="similarityPieChart" style="width: 70%; height: 70%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5" style="width:100%; height: 100%; padding: 0;">
+                    <div class="row" style="width:100%; height: 100%;">
+                        <div class="col-lg-6" style="height: 100%; padding-left: 5px;">
+                            <div class="card" style="height: 100%;">
+                                <div class="card-body" style=" width: 100%; height: 100%;">
+                                    <div class="header" style="width: 100%; height: 5%;">제보 내역</div>
+                                    <div class="row" id="sns1" style="width: 100%; height: 95%;">
+                                        <div style="width: 22%; height: 100%;">
+                                            <img src="../static/img/icon/1-5.png" style="height: 100%; width: 100%;">
+                                        </div>
+                                        <div style="width: 75%; height: 95%;">
+                                            <div style="width: 100%; height: 22%;">
+                                                <div class="header" style="height: 20%; text-align: left;">2015년 10월 9일
+                                                    19시
+                                                </div>
+                                                <div class="header" style="height: 20%; text-align: left;">[SNS] 부산대학교
+                                                </div>
+                                                <div style="height: 53%; overflow: scroll">
+                                                    <img src="../static/data/sns/부산대.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 95%; height: 22%; margin-top:1%; margin-left: 5%;">
+                                                <div class="header" style="height: 20%; text-align: left;">2015년 10월 9일
+                                                    21시
+                                                </div>
+                                                <div class="header" style="height: 20%; text-align: left;">[SNS] 부산 수영동
+                                                    김밥천국
+                                                </div>
+                                                <div style="height: 53%; overflow: scroll">
+                                                    <img src="../static/data/sns/수영동.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 22%; margin-top:1%;">
+                                                <div class="header" style="height: 20%; text-align: left;">2015년 10월 10일
+                                                    12시
+                                                </div>
+                                                <div class="header" style="height: 20%; text-align: left;">[SNS] 남천동
+                                                </div>
+                                                <div style="height: 53%; overflow: scroll">
+                                                    <img src="../static/data/sns/남천동.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 22%; margin-top:1%;">
+                                                <div class="header" style="height: 20%; text-align: left;">2015년 10월 10일
+                                                    13시
+                                                </div>
+                                                <div class="header" style="height: 20%; text-align: left;">[SNS] 부산역
+                                                </div>
+                                                <div style="height: 53%; overflow: scroll">
+                                                    <img src="../static/data/sns/부산역.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 10%; margin-top:1%;">
+                                                <div class="header" style="height: 30%; text-align: left; color: red;">
+                                                    [최신]
+                                                </div>
+                                                <div class="header" style="height: 30%; text-align: left;">2015년 10월 10일
+                                                    14시
+                                                </div>
+                                                <div class="header" style="height: 30%; text-align: left;">[CCTV] 흰여울 문화
+                                                    마을
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="sns2" style="width: 100%; height: 95%;">
+                                        <div style="width: 22%; height: 100%;">
+                                            <img src="../static/img/icon/1-6.png" style="height: 100%; width: 100%;">
+                                        </div>
+                                        <div style="width: 75%; height: 95%;">
+                                            <div style="width: 100%; height: 18%;margin-left: 5%;">
+                                                <div class="header" style="height: 25%; text-align: left;">2015년 10월 9일
+                                                    19시
+                                                </div>
+                                                <div class="header" style="height: 25%; text-align: left;">[SNS] 부산대학교
+                                                </div>
+                                                <div style="height: 43%; overflow: scroll">
+                                                    <img src="../static/data/sns/부산대.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 95%; height: 18%; margin-top:1%; margin-left: 5%;">
+                                                <div class="header" style="height: 25%; text-align: left;">2015년 10월 9일
+                                                    21시
+                                                </div>
+                                                <div class="header" style="height: 25%; text-align: left;">[SNS] 부산 수영동
+                                                    김밥천국
+                                                </div>
+                                                <div style="height: 43%; overflow: scroll">
+                                                    <img src="../static/data/sns/수영동.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 18%; margin-top:1%; margin-left: 5%;">
+                                                <div class="header" style="height: 25%; text-align: left;">2015년 10월 10일
+                                                    12시
+                                                </div>
+                                                <div class="header" style="height: 25%; text-align: left;">[SNS] 남천동
+                                                </div>
+                                                <div style="height: 43%; overflow: scroll">
+                                                    <img src="../static/data/sns/남천동.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 18%; margin-top:1%;margin-left: 5%;">
+                                                <div class="header" style="height: 25%; text-align: left;">2015년 10월 10일
+                                                    13시
+                                                </div>
+                                                <div class="header" style="height: 25%; text-align: left;">[SNS] 부산역
+                                                </div>
+                                                <div style="height: 43%; overflow: scroll">
+                                                    <img src="../static/data/sns/부산역.png" style="width: 100%;">
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 15%; margin-top:1%;margin-left: 5%;">
+                                                <div class="header" style="height: 25%; text-align: left;">2015년 10월 10일
+                                                    14시
+                                                </div>
+                                                <div class="header" style="height: 50%; text-align: left;">[CCTV] 흰여울 문화
+                                                    마을
+                                                </div>
+                                            </div>
+                                            <div style="width: 100%; height: 15%; margin-top:1%;margin-left: 5%;">
+                                                <div class="header" style="height: 30%; text-align: left; color: red;">
+                                                    [최신]
+                                                </div>
+                                                <div class="header" style="height: 30%; text-align: left;">2015년 10월 10일
+                                                    15시
+                                                </div>
+                                                <div class="header" style="height: 30%; text-align: left;">[CCTV] 용당지역
+                                                    부산은행
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" style="width: 100%; height: 100%;">
+                            <div class="row" style="width: 100%; height: 50%;">
+                                <div class="card" style="width: 100%; height: 100%;">
+                                    <div class="card-body" style="width: 100%; height: 100%;">
+                                        <div id="map" style="width: 100%; height: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="width: 100%; height: 49%; margin-top: 1%;">
+                                <div class="card" style="width: 100%; height: 100%;">
+                                    <div class="card-body" style="width: 100%; height: 100%;">
+                                        <div class="header" style="text-align: center; height: 10%;">
+                                            예상 경로
+                                        </div>
+                                        <div class="row" style="height: 45%">
+                                            <div class="col-lg-6" style="position: relative;">
+                                                <div id="cctv1" class="cctv-video data-section empty"
+                                                     style="height: 100%; position: absolute;"
+                                                     onclick="nextVideo(this.id)"></div>
+                                                <img src="../static/img/node/10.png"
+                                                     style="width: 30%; position: absolute;">
+                                            </div>
+                                            <div class="col-lg-6" style="height: 100%;position: relative;">
+                                                <div id="cctv2" class="cctv-video data-section empty"
+                                                     style="height: 100%;position: absolute;"
+                                                     onclick="nextVideo(this.id)"></div>
+                                                <img src="../static/img/node/11.png"
+                                                     style="width: 30%; position: absolute;">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="height: 45%">
+                                            <div class="col-lg-6" style="height: 100%;position: relative;">
+                                                <div id="cctv3" class="cctv-video data-section empty"
+                                                     style="height: 100%;position: absolute;"
+                                                     onclick="nextVideo(this.id)"></div>
+                                                <img src="../static/img/node/12.png"
+                                                     style="width: 30%; position: absolute;">
+                                            </div>
+                                            <div class="col-lg-6" style="height: 100%;position: relative;">
+                                                <div id="cctv4" class="cctv-video data-section empty"
+                                                     style="height: 100%;position: absolute;"
+                                                     onclick="nextVideo(this.id)"></div>
+                                                <img src="../static/img/node/13.png"
+                                                     style="width: 30%; position: absolute;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4 bg-light mt-auto">
+        <div class="container-fluid px-4">
+            <div class="d-flex align-items-center justify-content-between small">
+                <div class="text-muted">Copyright &copy; PCN & WISEITECH & Sejong University 2023</div>
+                <!-- <div>
+                    <a href="#">Privacy Policy</a>
+                    &middot;
+                    <a href="#">Terms &amp; Conditions</a>
+                </div> -->
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.8.0/mapbox-gl.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>
+<script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js"></script>
+<script src="static/lib/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="static/lib/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<script src="static/lib/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+<script src="static/lib/datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="static/lib/select2/js/select2.min.js" type="text/javascript"></script>
+<script src="static/lib/bootstrap-slider/bootstrap-slider.min.js" type="text/javascript"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/heatmap.js"></script>
+<script src='https://cdn.plot.ly/plotly-2.27.0.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+<script src="https://d3js.org/d3.v6.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js" type="text/javascript"></script>
+<script src="https://rawgit.com/jasondavies/d3-cloud/master/build/d3.layout.cloud.js"></script>
+<script src="static/js/app.js" type="text/javascript"></script>
+<script src="static/js/app-form-elements.js" type="text/javascript"></script>
+<script src="static/js/d3.layout.cloud.js" type="text/javascript"></script>
+<script src="static/js/va-map.js" type="text/javascript"></script>
+<script src="static/js/va-app.js" type="text/javascript"></script>
+<script src="static/js/va-cctv-info.js" type="text/javascript"></script>
+<script src="static/js/description.js" type="text/javascript"></script>
+<script src="static/js/va-person.js" type="text/javascript"></script>
+<script src="static/js/similarityBarChart.js" type="text/javascript"></script>
+<script src="static/js/similarityPieChart.js" type="text/javascript"></script>
+<script src="static/js/wordCloud.js" type="text/javascript"></script>
+<script src="static/js/report.js" type="text/javascript"></script>
+<script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "info": {
+    "org_id": 101,
+    "org_img_name": "101",
+    "org_path": "/Images/montage/101.png",
+    "org_img_size": 150,
+    "org_img_pix": "540x720",
+    "age": 48,
+    "gender": "M",
+    "level": 1
+  },
+  "description": {
+    "org_id": 101,
+    "face": {
+      "type": "타원형",
+      "size": "보통",
+      "foreheadType": "넓은",
+      "foreheadSize": "보통",
+      "chinType": "뾰족형",
+      "chinSize": "보통",
+      "cheek": "보통",
+      "description": "타원형 얼굴에 넓은 이마, 보통 사이즈의 뾰족한 턱을 가지고 있습니다. 볼은 평범한 편입니다."
+    },
+    "hairstyle": {
+      "type": "직모(생머리)",
+      "topLength": "짧음",
+      "sizeLength": "분류없음",
+      "part": "가운데 가르마",
+      "description": "짧은 생머리에 가운데 가르마가 특징입니다. 전반적으로 깔끔한 스타일을 유지합니다."
+    },
+    "eyebrows": {
+      "type": "곡선형",
+      "deep": "분류없음",
+      "length": "보통",
+      "thick": "보통",
+      "glabella": "보통",
+      "description": "곡선형의 보통 두께와 길이의 눈썹입니다."
+    },
+    "eyes": {
+      "size": "보통",
+      "type": "쌍커풀",
+      "distance": "보통",
+      "slant": "보통",
+      "shape": "분류없음",
+      "eyelids": "보통",
+      "bottom": "없다",
+      "description": "보통 크기의 쌍커플 눈으로, 눈과 눈 사이의 거리도 보통입니다. 눈꼬리는 올라가지 않은 평범한 모양입니다."
+    },
+    "nose": {
+      "size": "보통",
+      "length": "길다",
+      "height": "높다",
+      "top": "둥근형",
+      "nostrils": "보통",
+      "philtrum": "보통",
+      "description": "길고 높은 코를 가지고 있으며, 콧등은 둥근 형태입니다."
+    },
+    "mouth": {
+      "type": "보통형",
+      "size": "보통",
+      "shape": "ㅡ모양",
+      "thick": "보통",
+      "ratio": "위아래가 같다",
+      "side": "보통",
+      "line": "분명함",
+      "description": "보통 크기와 두께의 입술을 가지고 있으며, 튀어 나온 입을 가지고 있습니다."
+    },
+    "neck": {
+      "description": "보통 길이의 목을 가지고 있으며, 특별한 특징은 없습니다."
+    },
+    "wrinkle": {
+      "forehead": "없다",
+      "glabella": "없다",
+      "eyes": "없다",
+      "mouth": "없다",
+      "cheek": "없다",
+      "lib": "없다",
+      "neck": "없다",
+      "description": "주름이 약간 있으며, 깨끗한 피부를 유지하고 있습니다."
+    },
+    "feature": {
+      "mustache": "없음",
+      "sideburns": "없음",
+      "dimple": "없음",
+      "scar": "없음",
+      "mole": "작은 점 하나",
+      "frekles": "없음",
+      "spots": "없음",
+      "tatoo": "없음",
+      "makeup": "없음",
+      "description": "안경을 착용하고 있습니다."
+    },
+    "impression": {
+      "type": "친근하고 유머러스함",
+      "description": "전체적인 외모와 표정에서 친근감과 유머러스한 성격이 드러납니다. 밝고 긍정적인 인상을 주며, 날씬하고 탄탄한 체격, 툭 튀어 나온 입이 특징입니다."
+    }
+  },
+  "sketch_info": {
+    "org_id": 101,
+    "sketch_id": 2024,
+    "img_name": "101_2024",
+    "img_path": "/Images/sketch/H/101_2024.jpg",
+    "img_size": 140,
+    "img_pix": "540x720"
+  },
+  "org_sketch_info": {
+    "org_id": 101,
+    "org_sketch_id": 30001,
+    "img_name": "101",
+    "img_path": "/Images/org_sketch/101.png",
+    "img_size": 180,
+    "img_pix": "540x720"
+  }
+}
