@@ -74,15 +74,15 @@ zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
       count: 20
     },
     {
-      text: "뾰족한 턱",
+      text: "갸름한 턱",
       count: 20
     },
     {
-      text: "짧은",
+      text: "앞머리",
       count: 40
     },
     {
-      text: "생머리",
+      text: "짧은 머리",
       count: 40
     },
     {
@@ -94,15 +94,19 @@ zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
       count: 60
     },
     {
-      text: "길고 높은 코",
+      text: "작은 눈",
+      count: 60
+    },
+    {
+      text: "높은 코",
       count: 50
     },
     {
-      text: "둥근 콧등",
+      text: "뾰족한 코",
       count: 70
     },
     {
-      text: "튀어 나온 입",
+      text: "돌출형 입",
       count: 100
     },
     {
@@ -114,7 +118,7 @@ zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
       count: 10
     },
     {
-      text: "안경",
+      text: "남성",
       count: 80
     }
   ],
@@ -128,6 +132,7 @@ zingchart.MODULESDIR = 'https://cdn.zingchart.com/modules/';
          '#B8860B', //피부
          '#696969', //안경
          '#DB7093', //코
+         '#008B8B',  //눈
          '#008B8B',  //눈
          '#DB7093', //코
          '#228B22', //머리
