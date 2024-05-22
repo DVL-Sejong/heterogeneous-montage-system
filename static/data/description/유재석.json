@@ -19,14 +19,14 @@
       "chinType": "뾰족형",
       "chinSize": "보통",
       "cheek": "보통",
-      "description": "타원형<br>넓은 이마<br>뾰족한 턱"
+      "description": "타원형<br>넓은 이마<br>갸름한 턱"
     },
     "hairstyle": {
       "type": "직모(생머리)",
       "topLength": "짧음",
       "sizeLength": "분류없음",
       "part": "가운데 가르마",
-      "description": "짧은<br>생머리"
+      "description": "앞머리<br>짧은 머리"
     },
     "eyebrows": {
       "type": "곡선형",
@@ -44,7 +44,7 @@
       "shape": "분류없음",
       "eyelids": "보통",
       "bottom": "없다",
-      "description": "쌍커풀"
+      "description": "쌍커풀<br>작은 눈"
     },
     "nose": {
       "size": "보통",
@@ -53,7 +53,7 @@
       "top": "둥근형",
       "nostrils": "보통",
       "philtrum": "보통",
-      "description": "길고 높은 코<br>둥근 콧등"
+      "description": "높은 코<br>뾰족한 코"
     },
     "mouth": {
       "type": "보통형",
@@ -63,7 +63,7 @@
       "ratio": "위아래가 같다",
       "side": "보통",
       "line": "분명함",
-      "description": "튀어 나온 입"
+      "description": "돌출형 입"
     },
     "neck": {
       "description": "보통 길이"
@@ -88,7 +88,7 @@
       "spots": "없음",
       "tatoo": "없음",
       "makeup": "없음",
-      "description": "안경"
+      "description": "남성"
     },
     "impression": {
       "type": "친근하고 유머러스함",
